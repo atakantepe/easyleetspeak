@@ -1,6 +1,8 @@
 # EasyLeetSpeak
 
 ### Coming Soon to the Google Chrome Extension Store!
+<img src="https://github.com/user-attachments/assets/f310de6b-fe34-4080-b08e-ebae2cf32b24" alt="Leet Speak Translator" width="500"/>
+
 
 ## Overview
 EasyLeetSpeak is a browser extension that allows users to encode and decode text in Leet Speak (also known as 1337 speak) through a user-friendly popup interface or context menu. The extension supports three levels of encoding: Basic, Intermediate, and Advanced.
