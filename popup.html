@@ -1,21 +1,160 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Leet Speak Translator</title>
+    <title>EasyLeetSpeak</title>
     <link rel="stylesheet" type="text/css" href="popup.css" />
   </head>
   <body>
-    <h1>Leet Speak Translator</h1>
-    <textarea id="inputText" placeholder="Enter text here"></textarea>
-    <select id="format">
-      <option value="Basic">Basic</option>
-      <option value="Intermediate">Intermediate</option>
-      <option value="Advanced">Advanced</option>
-    </select>
-    <button id="encodeBtn">Encode</button>
-    <button id="decodeBtn">Decode</button>
-    <p id="output"></p>
-    <textarea id="translatedText" readonly></textarea>
+    <div class="container">
+      <div class="header">
+        <h1>EasyLeetSpeak</h1>
+        <button id="resetBtn">Reset</button>
+      </div>
+      <textarea id="inputText" placeholder="Enter text here"></textarea>
+      <div class="action-container">
+        <select id="format">
+          <option value="Basic">Leet Basic</option>
+          <option value="Intermediate">Leet Intermediate</option>
+          <option value="Advanced">Leet Advanced</option>
+        </select>
+        <button id="encodeBtn">Encode</button>
+        <button id="decodeBtn">Decode</button>
+      </div>
+
+      <textarea
+        id="translatedText"
+        readonly
+        placeholder="Translated text will appear here"
+        value=""
+      ></textarea>
+    </div>
+
     <script type="module" src="popup.js"></script>
   </body>
 </html>
+<style>
+  * {
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  body {
+    min-width: 400px;
+    margin: 0;
+    padding: 0;
+    color: #e2e8f0;
+    font-family: monospace;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #0f172a;
+  }
+  .action-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+  }
+  .action-container select {
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background-color: #020617;
+    color: #f1f5f9;
+  }
+  .action-container select:focus {
+    outline: none;
+    border: 1px solid #22d3ee;
+  }
+
+  .action-container select > option {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background-color: #020617;
+    color: #f1f5f9;
+  }
+  .action-container button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #22d3ee;
+    background-color: #22d3ee;
+    cursor: pointer;
+    color: #020617;
+  }
+  .action-container button:hover {
+    background-color: #67e8f9;
+  }
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  textarea {
+    width: 100%;
+    min-height: 140px;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #334155;
+    background-color: #020617;
+    color: #cbd5e1;
+    padding: 10px;
+    font-size: 1rem;
+    max-height: 198px;
+  }
+  textarea:focus {
+    outline: none;
+    border: 1px solid #22d3ee;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: #334155;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #b8c6da;
+    border-radius: 10px;
+    width: 2px;
+    height: 4px;
+    cursor: pointer;
+  }
+  ::-webkit-scrollbar-track {
+    padding: 2px;
+    width: 6px;
+    background-color: #334155;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3341558e;
+  }
+
+  #resetBtn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #f87171;
+    background-color: #f87171;
+    color: #020617;
+    cursor: pointer;
+  }
+
+  #resetBtn:hover {
+    background-color: #fca5a5;
+  }
+
+  button {
+    font-weight: 600;
+  }
+</style>

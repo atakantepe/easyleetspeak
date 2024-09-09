@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Leet Speak Translator",
-  "version": "1.1",
+  "version": "1.0",
   "description": "Translate and decode text in Leet Speak (Basic, Intermediate, Advanced) via a context menu or popup.",
   "permissions": ["contextMenus", "activeTab", "scripting", "storage"],
   "background": {
