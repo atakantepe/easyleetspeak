@@ -12,7 +12,7 @@ EasyLeetSpeak is a browser extension that allows users to encode and decode text
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/leetspeak-translator.git
+   git clone https://github.com/atakantepe/easyleetspeak.git
    ```
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" in the top right corner.
