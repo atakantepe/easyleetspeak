@@ -3,12 +3,25 @@
   <head>
     <title>EasyLeetSpeak</title>
     <link rel="stylesheet" type="text/css" href="popup.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <div class="header">
         <h1>EasyLeetSpeak</h1>
-        <button id="resetBtn">Reset</button>
+        <div class="header-actions">
+          <button id="resetBtn">Reset</button>
+          <a
+            class="github-link"
+            href="https://github.com/atakantepe/easyleetspeak"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
       <textarea id="inputText" placeholder="Enter text here"></textarea>
       <div class="action-container">
@@ -148,6 +161,7 @@
     background-color: #f87171;
     color: #020617;
     cursor: pointer;
+    width: 58px;
   }
 
   #resetBtn:hover {
@@ -156,5 +170,29 @@
 
   button {
     font-weight: 600;
+  }
+
+  .github-link {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #94a3b8;
+    background-color: #94a3b8;
+    cursor: pointer;
+    color: #020617;
+  }
+
+  .github-link:hover {
+    background-color: #cbd5e1;
+  }
+
+  .github-link i {
+    font-size: 1rem;
+  }
+
+  .header-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
   }
 </style>
