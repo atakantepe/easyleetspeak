@@ -38,7 +38,7 @@ The extension requires the following permissions:
 ## Development
 - The extension is built using HTML, CSS, and JavaScript.
 - The encoding and decoding logic is implemented in `leetSpeakTranslator.js`.
-- The popup interface is defined in `popup.html` and styled with `popup.css`.
+- The popup interface is defined in `popup.html`.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
