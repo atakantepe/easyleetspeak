@@ -1,6 +1,6 @@
 # EasyLeetSpeak
 
-### Coming Soon to the Google Chrome Extension Store!
+### [Download From The Google Chrome Extension Store!](https://chromewebstore.google.com/detail/easyleetspeak/ejeeckeijcimcpikccilhcpdjjbkadee?authuser=0&hl=en-GB)
 <img src="https://github.com/user-attachments/assets/f310de6b-fe34-4080-b08e-ebae2cf32b24" alt="Leet Speak Translator" width="500"/>
 
 
